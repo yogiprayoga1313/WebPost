@@ -2,9 +2,9 @@ WebPost App
 
 ### Deploy Netlify
 
-[https://imaginative-cat-e8a8b7.netlify.app/](https://imaginative-cat-e8a8b7.netlify.app/){:target="_blank"}
+[https://imaginative-cat-e8a8b7.netlify.app/]
 
-Klik tautan di atas untuk membuka situs deploy Netlify dalam tab baru.
+Klik tautan di atas untuk membuka situs deploy.
 
 WebPost adalah aplikasi sederhana untuk menampilkan dan menambahkan posting menggunakan React, Redux Toolkit, dan TailwindCSS.
 
