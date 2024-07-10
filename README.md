@@ -4,7 +4,9 @@ WebPost App
 WebPost adalah aplikasi sederhana untuk menampilkan dan menambahkan posting menggunakan React, Redux Toolkit, dan TailwindCSS.
 
 Cara Menjalankan Aplikasi
-Prasyarat
+
+Prasyarat:
+
 Pastikan Anda telah menginstal Node.js dan npm (Node Package Manager) di sistem Anda.
 
 Langkah-langkah untuk Menjalankan Aplikasi
