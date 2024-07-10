@@ -5,14 +5,14 @@ import { addPost } from '../features/posts/postsSlice';
 
 const AddPostForm = () => {
   const dispatch = useDispatch();
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const [saved, setSaved] = useState(false);
 
   const onSubmit = (data) => {
     dispatch(addPost(data));
     setSaved(true);
     reset();
-    setTimeout(() => setSaved(false), 3000); // Reset the saved state after 3 seconds
+    setTimeout(() => setSaved(false), 3000); 
   };
 
   return (
@@ -23,21 +23,24 @@ const AddPostForm = () => {
           <label htmlFor="title" className="block text-sm font-medium text-gray-700">Title</label>
           <input 
             id="title" 
-            {...register('title')} 
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+            {...register('title', { required: true })} 
+            className={`mt-1 block w-full px-3 py-2 border ${errors.title ? 'border-red-300' : 'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`} 
           />
+          {errors.title && <p className="mt-1 text-sm text-red-500">Title is required</p>} {/* Pesan error jika title kosong */}
         </div>
         <div className="mb-4">
           <label htmlFor="body" className="block text-sm font-medium text-gray-700">Body</label>
           <textarea 
             id="body" 
-            {...register('body')} 
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+            {...register('body', { required: true })} 
+            className={`mt-1 block w-full px-3 py-2 border ${errors.body ? 'border-red-300' : 'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`} 
           />
+          {errors.body && <p className="mt-1 text-sm text-red-500">Body is required</p>} {/* Pesan error jika body kosong */}
         </div>
         <button 
           type="submit" 
           className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          disabled={saved} // Men-disable tombol saat data sedang tersimpan
         >
           Save Post
         </button>
