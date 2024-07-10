@@ -73,14 +73,14 @@ const PostsList = () => {
   }
 
   return (
-    <section>
+    <section className="p-4 sm:p-6">
       <h2 className="text-3xl font-bold mb-6">Posts</h2>
       <input
         type="text"
         placeholder="Search by title..."
         value={searchTerm}
         onChange={handleSearch}
-        className="mb-4 p-2 border border-gray-300 rounded"
+        className="mb-4 p-2 border border-gray-300 rounded w-full sm:max-w-md"
       />
       {content}
     </section>
