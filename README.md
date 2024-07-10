@@ -1,21 +1,24 @@
 WebPost App
+
+
 WebPost adalah aplikasi sederhana untuk menampilkan dan menambahkan posting menggunakan React, Redux Toolkit, dan TailwindCSS.
 
 Cara Menjalankan Aplikasi
-Prasyarat
-Pastikan Anda telah menginstal Node.js dan npm (Node Package Manager) di sistem Anda.
 
-Langkah-langkah untuk Menjalankan Aplikasi
+Prasyarat:
 
-1. Clone Repository
-git clone https://github.com/username/repo-name.git
-cd repo-name
+Pastikan Anda telah menginstal Node.js
 
-2. Install Dependencies
-npm install
+Langkah-langkah untuk Menjalankan Aplikasi:
 
-3. Menjalankan Aplikasi
-npm start
+1. Clone Repository:
+git clone (https://github.com/yogiprayoga1313/WebPost.git)
+
+2. Install Dependencies:
+* npm install
+
+3. Menjalankan Aplikasi:
+* npm start
 
 Aplikasi akan berjalan di mode pengembangan.<br />
 Buka http://localhost:3000 di browser untuk melihat aplikasi.
@@ -28,7 +31,7 @@ Fitur Aplikasi:
 
 
 Teknologi yang Digunakan:
-React.js
-Redux Toolkit
-TailwindCSS
-Axios (untuk melakukan HTTP requests)
+* React.js
+* Redux Toolkit
+* TailwindCSS
+* Axios (untuk melakukan HTTP requests)
