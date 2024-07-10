@@ -10,7 +10,7 @@ Pastikan Anda telah menginstal Node.js dan npm (Node Package Manager) di sistem 
 Langkah-langkah untuk Menjalankan Aplikasi
 
 1. Clone Repository
-git clone [https://github.com/username/repo-name.git](https://github.com/yogiprayoga1313/WebPost.git)
+git clone (https://github.com/yogiprayoga1313/WebPost.git)
 cd repo-name
 
 2. Install Dependencies
