@@ -11,13 +11,12 @@ Langkah-langkah untuk Menjalankan Aplikasi
 
 1. Clone Repository
 git clone (https://github.com/yogiprayoga1313/WebPost.git)
-cd repo-name
 
-2. Install Dependencies
-npm install
+2. Install Dependencies:
+* npm install
 
 3. Menjalankan Aplikasi
-npm start
+* npm start
 
 Aplikasi akan berjalan di mode pengembangan.<br />
 Buka http://localhost:3000 di browser untuk melihat aplikasi.
