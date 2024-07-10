@@ -26,7 +26,7 @@ const AddPostForm = () => {
             {...register('title', { required: true })} 
             className={`mt-1 block w-full px-3 py-2 border ${errors.title ? 'border-red-300' : 'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`} 
           />
-          {errors.title && <p className="mt-1 text-sm text-red-500">Title is required</p>} {/* Pesan error jika title kosong */}
+          {errors.title && <p className="mt-1 text-sm text-red-500">Title is required</p>}
         </div>
         <div className="mb-4">
           <label htmlFor="body" className="block text-sm font-medium text-gray-700">Body</label>
@@ -35,12 +35,12 @@ const AddPostForm = () => {
             {...register('body', { required: true })} 
             className={`mt-1 block w-full px-3 py-2 border ${errors.body ? 'border-red-300' : 'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`} 
           />
-          {errors.body && <p className="mt-1 text-sm text-red-500">Body is required</p>} {/* Pesan error jika body kosong */}
+          {errors.body && <p className="mt-1 text-sm text-red-500">Body is required</p>} 
         </div>
         <button 
           type="submit" 
           className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          disabled={saved} // Men-disable tombol saat data sedang tersimpan
+          disabled={saved}
         >
           Save Post
         </button>
