@@ -29,7 +29,7 @@ Fitur Aplikasi:
 
 
 Teknologi yang Digunakan:
-React.js
-Redux Toolkit
-TailwindCSS
-Axios (untuk melakukan HTTP requests)
+* React.js
+* Redux Toolkit
+* TailwindCSS
+* Axios (untuk melakukan HTTP requests)
