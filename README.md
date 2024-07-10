@@ -7,17 +7,17 @@ Cara Menjalankan Aplikasi
 
 Prasyarat:
 
-Pastikan Anda telah menginstal Node.js dan npm (Node Package Manager) di sistem Anda.
+Pastikan Anda telah menginstal Node.js
 
-Langkah-langkah untuk Menjalankan Aplikasi
+Langkah-langkah untuk Menjalankan Aplikasi:
 
-1. Clone Repository
+1. Clone Repository:
 git clone (https://github.com/yogiprayoga1313/WebPost.git)
 
 2. Install Dependencies:
 * npm install
 
-3. Menjalankan Aplikasi
+3. Menjalankan Aplikasi:
 * npm start
 
 Aplikasi akan berjalan di mode pengembangan.<br />
