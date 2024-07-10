@@ -1,4 +1,6 @@
 WebPost App
+
+
 WebPost adalah aplikasi sederhana untuk menampilkan dan menambahkan posting menggunakan React, Redux Toolkit, dan TailwindCSS.
 
 Cara Menjalankan Aplikasi
